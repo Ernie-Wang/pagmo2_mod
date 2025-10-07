@@ -437,7 +437,7 @@ population pso::evolve(population pop) const
 
     // copy particles' positions & velocities back to the main population
     for (decltype(swarm_size) i = 0u; i < swarm_size; ++i) {
-        pop.set_xf(i, lbX[i], lbfit[i]);
+        pop.set_xf(i, X[i], fit[i]);
     }
     return pop;
 }
